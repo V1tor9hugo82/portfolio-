@@ -27,7 +27,63 @@
       <img src="./img/lemon-loader.svg" alt="limão" class="">
       <p class="vh-text-light vh-mar-top-15">O que vai acontecer se eu não desistir!....</p>
     </div>
-    
+  </div>
+
+  <!--overlay-->
+  <div class="vh-overlay vh-toggle-modal"></div>
+
+  <!--modal formulario de solicitação de orçamento-->
+  <div class="vh-modal vh-bg-black" id="vh-modal-orcamento">
+    <div class="vh-modal-header">
+      <h1 class="vh-title vh-text-cadetblue">
+        Solicite um orçamento 
+      </h1>
+      <button class="vh-close-modal vh-toggle-modal">
+        x
+      </button>
+    </div>
+    <div class="vh-modal-body">
+     <div class="row">
+       <div class="col-sm-12">
+        <p class="vh-text-light">
+          por favor informe os dados abaixo e eu entrarei em contato o mais breve possível
+        </p>
+       </div>
+     </div>
+     <div class="row vh-mar-top-15">
+       <div class="col-sm-12">
+        <form action="" class="vh-form">
+          <div class="row vh-mar-bottom-15">
+            <div class="col-sm-12 col-md-6 vh-mar-bottom-15">
+              <label for="Nome" class="vh-text-light">Nome:</label>
+              <input type="text" name="Nome" id="vh-nome" class="vh-field" placeholder="Digite seu Nome" required>
+            </div>
+            <div class="col-sm-12 col-md-6 vh-mar-bottom-15">
+              <label for="Email" class="vh-text-light">E-mail:</label>
+              <input type="email" name="Email" id="vh-email" class="vh-field" placeholder="Digite seu E-mail" required>
+            </div>
+            <div class="col-sm-12 col-md-6 vh-mar-bottom-15">
+              <label for="Telefone" class="vh-text-light">Telefone:</label>
+              <input type="tel" name="Telefone" id="vh-telefone" class="vh-field" placeholder="Digite seu Telefone" required>
+            </div>
+            <div class="col-sm-12 col-md-6 vh-mar-bottom-15">
+              <label for="Site" class="vh-text-light">Site:</label>
+              <input type="text" name="site" id="vh-site" class="vh-field" placeholder="Digite seu site" required>
+            </div>
+            <div class="col-sem-12 col-md-12 vh-mar-top-15">
+              <label for="Message" class="vh-text-light">Descreva o seu projeto</label>
+                <textarea name="Message" id="vh-message" cols="30" rows="8" class="vh-textarea" placeholder="Deixe sua mensagem"></textarea>
+            </div>
+          </div>
+          <div class="row justify-content-end vh-mar-top-15 vh-mar-bottom-15">
+            <div class="col-sm-12 col-md-6">
+              <button class="vh-btn vh-btn-large vh-btn-cadetblue vh-btn-block">Enviar</button>
+            </div>
+          </div>
+        </form>
+       </div>
+     </div>
+    </div>
   </div>
 
   <!--header-->
@@ -75,7 +131,9 @@
                 Meu nome e <span class="vh-text-cadetblue">Vitor Hugo da Rocha</span> sou desenvolvedor Web
                 front-end com conhecimentos em <span class="vh-text-cadetblue">HTML5 CSS3 e Javascript</span>
               </p>
-              <a href="#" class="vh-btn">Entre</a>
+              <button href="#" class="vh-btn vh-btn-large vh-btn-cadetblue vh-mar-top-15 vh-toggle-modal">
+                Solicite um Orçamento
+              </button>
             </div>
           </div>
         </div>
